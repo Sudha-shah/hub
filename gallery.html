@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 0;
+    color: #333; /* Dark text for better readability */
+}
+
+h2 {
+    text-align: center;
+    color: #008080; /* Teal color for the main heading */
+    margin-bottom: 10px;
+    font-size: 32px; /* Larger font size for headings */
+}
+
+h3 {
+    color: #008080; /* Teal color for all sub-headings */
+    font-size: 28px; /* Larger font size for sub-headings */
+    margin-top: 20px;
+}
+
+p.gallery-description {
+    text-align: center;
+    font-size: 16px;
+    color: #6c757d; /* Softer gray for less harsh contrast */
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.gallery > div {
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gallery img {
+    width: 170%;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery p {
+    margin: 0 0 8px;
+    font-weight: bold;
+    color: #495057; /* Darker gray for better readability */
+}
+
+.back-btn {
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #4eb8c4;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: max-content;
+}
+
+.back-btn:hover {
+    background-color: #89778f;
+}
+
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <h2>All Maps made by sudha shah</h2>
+    <p class="gallery-description">Click an image to view in full size</p>
+
+    <div class="gallery">
+        <div class="map-section">
+            <h3>Map 1:</h3>
+            <a href="#map1"><img src="Map1.jpg" alt="Map 1" class="map-image"></a>
+        
+        <p>
+            The aatma (soul) has a special quality called gyaan guna — the quality of knowledge.<br>
+There are five types of gyaan (knowledge), divided mainly into two groups: paroksh gyaan and pratyaksh gyaan.<br><br>
+
+1. Paroksh Gyaan (Indirect Knowledge):<br>
+This is the knowledge we get through our senses. For example, when you touch something and feel if it is hot or cold, that understanding comes through your senses — this is called paroksh gyaan.<br><br>
+
+Paroksh gyaan is of two types:<br><br>
+
+Mati Gyaan – Knowledge through the five senses and the mind.<br>
+Shrut Gyaan – Knowledge gained by listening, reading, or studying.<br><br>
+
+2. Pratyaksh Gyaan (Direct Knowledge):<br>
+This is knowledge that does not depend on the senses. It is experienced directly by the soul. There are three types:<br><br>
+
+Avadhi Gyaan – Knowing things at a distance, but within a limited range and time.<br>
+Manahparyay Gyaan – Knowing the thoughts of others through a pure mind.<br>
+Keval Gyaan – Perfect, unlimited knowledge. It happens when all coverings over the soul’s knowledge are removed.<br><br>
+
+Keval gyaan happens instantly when the soul becomes completely pure, and it leads the soul towards moksh (liberation).<br>    </p>
+        <div>
+            <h3>Map 2: The Transformative Path of the Soul
+</h3>
+            <a href="#map6"><img src="Map6.jpg" alt="Map 6"></a>
+            <p>
+                The soul resides in delusion (mithyatva). As it begins to burn off its karmas and moves gradually towards right belief (samkit), it starts forming different karmic clusters (punj). In this process, it either accelerates or delays certain karmic results, and clears the intermediate karmic fields. Only then can right belief (samkit) enter. And once samkit arises, only then can the soul progress towards liberation. So, this is a process of the soul’s journey.
+            </p>
+        </div>
+        <div>
+            <h3>Map 3: Jambudweep and Surrounding Cosmos</h3>
+            <img src="Map3.jpg" alt="Map 3 - Jambudweep" class="map-image">
+            <p>
+                Jambudweep is one lakh yojanas (an ancient unit of distance) wide. Surrounding it is the Lavana Samudra (Salt Ocean), which is two lakh yojanas wide. In this Salt Ocean, there are four Patalkosh (gigantic whirlpools or reservoirs) located at the four corners. These Patalkosh are so vast that they control all the water of the world. The phenomena of high and low tides are controlled by the deities through these reservoirs.
+            </p>
+            <p>
+                There are 56 Antardvips (intermediate islands) spread across the four directions. Let me pause here for a moment. So, these 56 Antardvips are divided in such a way that each region has seven sets of such islands. The Jugliya (a mythical or spiritual race of beings) reside in these dvips.
+            </p>
+            <p>
+                Moreover, in the Lavana Samudra live massive creatures—so large and powerful that they could potentially destroy the earth and all its inhabitants.
+            </p>
+            <p>
+                Within Jambudweep, there are three key regions: Bharat Kshetra, Airavat Kshetra, and Mahavideh Kshetra. These areas are inhabited with mountains, rivers, and various geographical features. The kind of life that exists in Bharat Kshetra is also found in Airavat and Mahavideh Kshetras.
+            </p>
+            <p>
+                There are 28 distinct lokas (worlds or realms), and people cannot travel from one to another. Similarly, in all four directions, there are groups of seven Siddha villages (settlements of spiritually liberated souls), where the environment remains exactly the same—neither too hot nor too cold, no rain or storms. People live there peacefully in a calm and balanced climate.
+            </p>
+            <p>
+                These places are home to the future Tirthankaras (spiritual leaders in Jainism). However, one Tirthankara cannot meet another due to the vast distance between their locations. The same as it is in Bharat Kshetra, so it is in Airavat Kshetra. Despite the similarities, humans have not been able to reach from one kshetra to another, nor have they seen it. Only Kevalis (omniscient beings) can see this through their divine knowledge.
+            </p>
+        </div>
+        <div>
+            <h3>Map 4: Choudhrajlok</h3>
+            <a href="#map4"><img src="Map4.jpg" alt="Map 4"></a>
+            <p style="font-size: 14px; color: #555; text-align: justify; padding-top: 8px;">
+                Choudhrajlok is a region that includes major places like Locakas, Alokakas, and Choudhrajjupraman. In Lokakas and Alokakas, there is a place called Trashnali. In Trashnali, there are many living beings.<br><br>
+                In Alokakas, outside Trashnali, there are non-living beings. Not living beings, but non-living beings. There are no living beings in Trashnali.<br><br>
+                In Trashnali, there is hell below. Then, there is the middle world. Then, there is the heaven above.<br><br>
+                Then, there is Moksha Gati above. This is the place for this. In this, there is Siddha Bhagwant.<br><br>
+                Then, there is the place above. Then, there is the entrance. Then, there is the end.
+            </p>
+        </div>
+        <div>
+            <h3>Map 5: The 12 Aran Kala Chakra.</h3>
+            <a href="#map5"><img src="Map5.jpg" alt="Map 5"></a>
+            <p style="font-size: 14px; color: #555; text-align: justify; padding-top: 8px;">
+                <br><br>
+                This Kala Chakra is very big. In it, along with happiness and sadness, time, people, and living beings are spread.<br><br>
+                In it, there are two kalas, Ausarapin Kaal and Utsarapin Kaal. In Ausarapin Kaal, time goes from happiness to sadness, step by step, and from sadness, step by step, happiness moves forward.<br><br>
+                In this way, the cycle of life continues. And while spreading the karma, it moves forward and moves towards liberation.
+            </p>
+        </div>
+        <div>
+            <h3>Map 6:</h3>
+            <a href="#map7"><img src="Map7.jpg" alt="Map 7"></a>
+            <p>
+        When there are nine living beings on earth, when the time is up, when the karma is over, when there are five Kalyanakas of Kewal Jnani, Tirthankar, Aryan Bhagwan, one of them is Chaban Kalyanak,
+        then Janma Kalyanak, then Diksha Kalyanak, then Keval Kalyanak. In this way, there are five Kalyanaks. At each Kalyanak, there is a bright flash of light. And because of that light, one or two beings come out,
+        and on the circumambulation of karma, it moves towards liberation. So, we can understand how much of a great help it is to the living beings of the Kalyanak Tirthankara, because only at the time of Kalyanak, the living beings are able to move towards liberation. The living beings come in the form of non-behaviour and the form of behaviour,
+        That is why I keep moving forward towards Mukti.
+    </p>
+        </div>
+    </div>
+
+    <!-- Lightbox sections -->
+    <div id="map1" class="lightbox">
+        <a href="#" class="close-lightbox">&times;</a>
+        <img src="Map1.jpg" alt="Map 1 Full View">
+    </div>
+    <div id="Map2" class="lightbox">
+        <a href="#" class="close-lightbox">&times;</a>
+        <img src="Map2.jpg" alt="Map 2 Full View">
+    </div>
+    <div id="Map3" class="lightbox">
+        <a href="#" class="close-lightbox">&times;</a>
+        <img src="Map3.jpg" alt="Map 3 Full View">
+    </div>
+    <div id="Map4" class="lightbox">
+        <a href="#" class="close-lightbox">&times;</a>
+        <div style="text-align: center; max-width: 90%;">
+            <img src="Map4.jpg" alt="Map 4 Full View">
+            <p style="color: white; margin-top: 20px; font-size: 16px; line-height: 1.6;">
+                Choudhrajlok is a region that includes major places like Locakas, Alokakas, and Choudhrajjupraman. In Lokakas and Alokakas, there is a place called Trashnali. In Trashnali there are many living beings.<br><br>
+                In Alokakas, outside Trashnali, there are non-living beings. Not living beings, but non-living beings. There are no living beings in Trashnali.<br><br>
+                In Trashnali, there is hell below. Then, there is the middle world. Then, there is the heaven above.<br><br>
+                Then, there is Moksha Gati above. This is the place for this. In this, there is Siddha Bhagwant.<br><br>
+                Then, there is the place above. Then, there is the entrance. Then, there is the end.
+            </p>
+        </div>
+    </div>
+    <div id="Map5" class="lightbox">
+        <a href="#" class="close-lightbox">&times;</a>
+        <div style="text-align: center; max-width: 90%;">
+            <img src="Map5.jpg" alt="Map 5 Full View">
+            <p style="color: white; margin-top: 20px; font-size: 16px; line-height: 1.6;">
+                The 12 Aran Kala Chakra.<br><br>
+                This Kala Chakra is very big. In it, along with happiness and sadness, time, people, and living beings are spread.<br><br>
+                In it, there are two kalas, Ausarapin Kaal and Utsarapin Kaal. In Ausarapin Kaal, time goes from happiness to sadness, step by step, and from sadness, step by step, happiness moves forward.<br><br>
+                In this way, the cycle of life continues. And while spreading the karma, it moves forward and moves towards liberation.
+            </p>
+        
+   <div id="Map6" class="lightbox" style="color: white; margin-top: 20px; font-size: 16px; line-height: 1.6;">
+    <a href="#" class="close-lightbox">&times;</a>
+    <img src="Map6.jpg" alt="Map 6 Full View">
+    <p>
+        When there are nine living beings on earth, when the time is up, when the karma is over, when there are five Kalyanakas of Kewal Jnani, Tirthankar, Aryan Bhagwan, one of them is Chaban Kalyanak,
+        then Janma Kalyanak, then Diksha Kalyanak, then Keval Kalyanak. In this way, there are five Kalyanaks. At each Kalyanak, there is a bright flash of light. And because of that light, one or two beings come out,
+        and on the circumambulation of karma, it moves towards liberation. So, we can understand how much of a great help it is to the living beings of the Kalyanak Tirthankara, because only at the time of Kalyanak, the living beings are able to move towards liberation. The living beings come in the form of non-behaviour and the form of behaviour,
+        That is why I keep moving forward towards Mukti.
+    </p>
+</div>
+</div>
+
+    <a href="index.html" class="back-btn">Back to Home</a>
+</body>
+</html>
