@@ -1,77 +1,518 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Sudha Shah - Domain Expired
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-      font-family: 'Fira Code', monospace, monospace;
-      background-color: #0d1117;
-      color: #c9d1d9;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books and Articles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .Tnav {
+            background-color: #89778f;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .abt {
+            background-color: #f1f1f1e0;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .abt h2 {
+            text-align: center;
+            font-size: 36px;
+            color: olive;
+        }
+        .abt p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+        }
+        .pi {
+            font-size: 20px;
+            line-height: 1.8;
+            padding: 15px;
+            text-align: justify;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #4eb8c4;
+            color: white;
+        }
+        
+        .article-section {
+            background-color: #f1f1f1e0;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .article-section h3 {
+            color: olive;
+            text-align: center;
+        }
+        .read-more {
+            display: inline-block;
+            color: #89778f;
+            border: 2px solid #89778f;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .read-more:hover {
+            background-color: #89778f;
+            color: white;
+        }
+        .go-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .go-to-top:hover {
+            background-color: #555;
+        }
+        /* Custom Google Translate Dropdown */
+        #google_translate_element {
+            font-family: Arial, sans-serif;
+        }
+        .goog-te-combo {
+            padding: 8px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #4eb8c4;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Style for the Translate dropdown button */
+        .language-selector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .language-selector select {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: #4eb8c4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .language-selector select:hover {
+            background-color: #3b9c9a;
+        }
+         .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 10px;
+      justify-items: center;
     }
-  </style>
- </head>
- <body class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
-  <div class="max-w-2xl w-full text-center space-y-8">
-   <div class="inline-flex items-center justify-center mb-4 text-yellow-400">
-    <i class="fas fa-exclamation-triangle fa-5x"></i>
-   </div>
-   <h1 class="text-5xl font-semibold text-white">
-    Sudha Shah
-   </h1>
-   <p class="text-xl text-gray-400">
-    Unfortunately, the domain for this page has expired and is no longer active.
-   </p>
-   <div class="bg-[#161b22] border border-[#30363d] rounded-md p-8 text-left space-y-6">
-    <section>
-     <h2 class="text-2xl font-semibold text-[#58a6ff] mb-2">
-      What does this mean?
-     </h2>
-     <p class="text-gray-400 leading-relaxed">
-      The domain name you are trying to access is no longer registered. This means the website and all associated services are currently unavailable. The owner may have chosen not to renew the domain or it may have expired unintentionally.
-     </p>
-    </section>
-    <section>
-     <h2 class="text-2xl font-semibold text-[#58a6ff] mb-2">
-      What can you do?
-     </h2>
-     <ul class="list-disc list-inside text-gray-400 leading-relaxed space-y-2">
-      <li>Check back later to see if the domain has been renewed.</li>
-      <li>Try to contact the owner through other means if you have their contact information.</li>
-      <li>Search for alternative websites or resources related to Sudha Shah.</li>
-     </ul>
-    </section>
-    <section>
-     <h2 class="text-2xl font-semibold text-[#58a6ff] mb-2">
-      Why do domains expire?
-     </h2>
-     <p class="text-gray-400 leading-relaxed">
-      Domains expire when the owner does not renew their registration before the expiration date. This can happen for many reasons including changes in business, oversight, or intentional discontinuation of the website.
-     </p>
-    </section>
-    <section>
-     <h2 class="text-2xl font-semibold text-[#58a6ff] mb-2">
-      Important:
-     </h2>
-     <p class="text-gray-400 leading-relaxed">
-      To keep your domain active, you need to pay the renewal fee to your domain registrar before the expiration date. Failure to do so will result in the domain becoming inactive and potentially available for others to register.
-     </p>
-    </section>
-    <section>
-     <h2 class="text-2xl font-semibold text-[#58a6ff] mb-2">
-      Need help or more information?
-     </h2>
-     <p class="text-gray-400 leading-relaxed">
-      If you are the owner of this domain and need assistance with renewal or transferring your domain, please contact your domain registrar or hosting provider.
-     </p>
-    </section>
-   </div>
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .view-more-btn {
+      display: block;
+      margin: 30px auto 0;
+      text-align: center;
+      padding: 10px 20px;
+      background-color: #4eb8c4;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      width: max-content;
+    }
+    .view-more-btn:hover {
+      background-color: #89778f;
+    }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="Tnav">
+        <h2 style="color: white;">Books and Articles</h2>
+<!-- Google Translate Dropdown -->
+<div id="google_translate_element"></div>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,hi,gu,mr,en',  // Add the languages you want
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+
+    // Load Google Translate script
+    (function() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.body.appendChild(script);
+    })();
+</script>
+
+<!-- Custom Styling for Google Translate Dropdown -->
+<style>
+    /* Google Translate Container */
+    #google_translate_element {
+        font-family: Arial, sans-serif;
+        background-color: #89778f; /* Background color */
+        border-radius: 5px; /* Rounded corners */
+        padding: 5px;
+        display: inline-block;
+    }
+
+    /* Dropdown Style */
+    .goog-te-combo {
+        font-size: 14px; /* Smaller text */
+        padding: 5px 10px; /* Reduced padding to make it thin */
+        border-radius: 5px;
+        border: 1px solid #4eb8c4;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: auto; /* Adjust the width to the content */
+    }
+
+    /* Hover Effect for Dropdown */
+    .goog-te-combo:hover {
+        background-color: #4eb8c4;
+        color: white;
+    }
+</style>
+    </nav>
+
+    <!-- Logo Section -->
+    <img src="logo.jpg" alt="Website Logo">
+  <div class="abt">
+    <h2>Welcome to the Inspiring Journey of Sudha Shah</h2>
+    <p>
+        From being the first in my family to pursue higher education to becoming an award-winning author, my life is a testament to resilience and perseverance. At 73, I reflect on breaking societal norms, embracing lifelong learning, and advocating for women's empowerment. Join me as I share the stories and experiences that have shaped my path, celebrating the strength and significance of women in a male-dominated world.
+    </p>
+    <div style="text-align: center; position: relative;">
+        <a href="imp.html" class="read-more" style="z-index: 2;">Read More</a>
+        <!-- Full-width border image -->
+        <div style="width: 100%; overflow: hidden; margin-top: -30px;">
+            <img src="border.png" width="100%" style="display: block;">
+        </div>
+    </div>
+</div>
+
+<!-- CSS for Read More Button -->
+<style>
+    .read-more {
+        display: inline-block;
+        background-color: #4eb8c4;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 2;
+    }
+
+    .read-more:hover {
+        background-color: #89778f;
+    }
+</style>
+<div style="text-align: center; font-family: 'Georgia', serif; background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
+  <p style="color: teal; font-weight: bold; font-size: 18px;">
+    All books, articles, and soul maps are lovingly created by Sudha Shah.<br>
+    Each word is a reflection of an inner journey.
+  </p>
+</div>
+    <!-- Book Section -->
+    <div class="abt">
+           <!-- Book Section -->
+    <div class="abt">
+        <h2>Books</h2>
+        <!-- Book 1 -->
+        <div>
+            <a href="https://drive.google.com/file/d/1HXtFnaJK4LDF8WgUokqhi0chJcekwpJI/view?usp=drivesdk">
+                <img src="book5.png" alt="Book Cover 1">
+            </a>
+            <p class="pi">
+                <b>"Women's Place in a Male-Dominated Society"</b> by Sudha Shah highlights women's challenges and advocates for empowerment.
+            </p>
+            <div style="text-align: center;">
+                <a href="https://drive.google.com/drive/folders/16t-embvxP40uCoGOdipkzPNEQEEgulKM" class="btn">
+                    <i class="fa fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div style="margin-top: 40px;">
+            <a href="https://drive.google.com/file/d/1XhZqUjdK2dfpFwaKZcOAmduzL1GSHHH4/view?usp=sharing">
+                <img src="book2.png" alt="Book Cover 2">
+            </a>
+            <p class="pi">
+                <b>"Light of Knowledge, Joy of the Soul"</b> explores how acquiring knowledge uplifts the human spirit and fosters growth.
+            </p>
+            <div style="text-align: center;">
+                <a href="https://drive.google.com/drive/folders/16t-embvxP40uCoGOdipkzPNEQEEgulKM" class="btn">
+                    <i class="fa fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- Audio Book Section -->
+<div class="audio-section">
+    <h3 style="text-align: center; font-size: 24px; color: #4eb8c4;">Audio Books</h3>
+    <div class="audio-card">
+        <!-- Image Section -->
+        <div class="audio-img">
+            <img src="audio.jpg" alt="Audio Book" style="width: 200px; height: 200px; object-fit: cover; border-radius: 10px;">
+        </div>
+        <!-- Details Section -->
+        <div class="audio-details">
+            <h4 style="color: #89778f;text-align:center;">Vyakti Ghadtar</h4>
+            <p style="font-size: 16px; color: #333; text-align: center; max-width: 300px;">
+               
+મૈં વ્યક્તિ ઘડતર ફાધર વલ્લેસનું ઑડિયોબુક જોડ્યું છે. આ એક સરળ અને પ્રેરણાદાયક પુસ્તક છે, જે વ્યક્તિગત વર્તણૂક અને વ્યક્તિત્વના વિકાસ પર આધારિત છે. આ પુસ્તક જીવનને સારો અને અર્થપૂર્ણ બનાવવાની વાર્તાઓ અને પાઠો આપે છે. તમે આ ઑડિયોબુકને જોડેલા ફાઈલમાં પામશો.
+
+
+            </p>
+        </div>
+        <!-- Audio Player -->
+        <audio controls style="width: 100%; border-radius: 10px; margin-top: 15px;" >
+            <source src="audio1.m4a" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <!-- Listen More Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="https://drive.google.com/drive/folders/12WXo8S0pRCgyyvqYx77LReGYTBHOTO_r" class="listen-more-btn">
+            Listen More
+        </a>
+    </div>
+</div>
+
+<!-- Styling -->
+<style>
+    .audio-section {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f1f1f1e0;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 350px;
+    }
+    .audio-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .audio-details h4 {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+    .listen-more-btn {
+        display: inline-block;
+        background-color: #4eb8c4;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    .listen-more-btn:hover {
+        background-color: #89778f;
+    }
+</style>
+ 
+    <!-- Article Section -->
+    <div class="article-section">
+        <h3>MUSKURAHAT</h3>
+        <p>
+            जरा सी बात पर परेशान हो जाना, निराश हो जाना, रोना , उत्तेजित हो जाना, क्रोधांध स्थिति में आकर न कहने योग्य बात को कह जाना और न करने योग्य कार्य को कर जाना, यह सब मनुष्य की आंतरिक कमजोरी है। उत्तेजना और क्रोध में कहा गया शब्द और किया गया कर्म स्थिति को और बिगाड़ देता है। इसलिए मौन और मुस्कुराहट को अपना आभूषण बनाएं। संसार का चक्र ऐसे ही चलता रहेगा, मुस्कुराकर हर क्षण को स्वीकार करो।
+        </p>
+        <div style="text-align: center;">
+            <a href="https://drive.google.com/drive/folders/1-0ZiLx6Yd1FrsLxl3d8QqbziJPkLUU25" class="read-more">Read More</a>
+        </div>
+    </div>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <article style="background-color: #D0C9B8; padding: 20px; border-radius: 10px; max-width: 500px; margin: auto; font-family: Arial, sans-serif; color: #333;">
+    <h2 style="text-align: center;">
+      <i class="fas fa-dove"></i> Ahinsa – The Path of Peace
+    </h2>
+    <p style="font-size: 16px; line-height: 1.5;">
+      Ahinsa, or non-violence, is a fundamental principle of many Indian philosophies and religions. It emphasizes the importance of not causing harm to any living being through thoughts, words, or actions.
+    </p>
+    <div style="text-align: center; margin-top: 15px;">
+      <a href="https://drive.google.com/file/d/10iqc8QxBd82OrvuXX1LPpCpLzIWc9vja/view?usp=drivesdk" target="_blank" style="background-color: #8B7E66; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+        Read More
+      </a>
+    </div>
+  </article>
+  <div style="background-color: #f9f9f9; color: #333; padding: 25px; font-family: 'Segoe UI', sans-serif; border-radius: 10px; max-width: 750px; margin: 30px auto; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  <h2 style="text-align: center; color: #005f73;">🔰 पाकिस्तान से जंग की आहट के बीच 29 साल की महिला पायलट को मिली राफेल की कमान 🔰</h2>
+  
+  <h3 style="margin-top: 20px;">Woman Fighter Pilot :</h3>
+  <p>
+    पहलगाम हमले के बाद भारत-पाकिस्तान की सीमाओं पर तनाव का माहौल है। दोनों देशों में युद्ध जैसे हालात हैं। इसी बीच भारतीय वायुसेना (IAF) ने एक महत्वपूर्ण कदम उठाया है। 
+    29 वर्षीय फ्लाइट लेफ्टिनेंट <strong>शिवांगी सिंह</strong> को अत्याधुनिक लड़ाकू विमान राफेल की कमान सौंपी गई है।
+  </p>
+
+  <p>
+    यह न केवल सैन्य दृष्टिकोण से महत्वपूर्ण फैसला है, बल्कि रक्षा क्षेत्र में महिलाओं की बढ़ती भूमिका को भी दर्शाता है जो अब युद्धक अभियानों की अग्रिम पंक्ति में दिखाई दे रही हैं।
+  </p>
+
+  <h3 style="text-align: center; color: #0077b6;">>> राफेल उड़ाएगी 'भारत की बेटी' <<</h3>
+
+  <p>
+    राफेल की गरजती उड़ानों के बीच एक नाम जो आसमान से दुश्मन को नेस्तनाबूद करने का साहस रखता है वो नाम है फ्लाइट लेफ्टिनेंट शिवांगी सिंह। 
+    एक इंटरव्यू में उन्होंने कहा था कि जब वह पहली बार कॉकपिट में बैठीं, तो दिल की धड़कनें तेज थीं। 
+    वह बेहद "नर्वस और चिंतित" थीं, लेकिन वह पल जब उन्होंने अकेले विमान उड़ाया, उनकी यादों में हमेशा के लिए बस गया। वह अनुभव बहुत ही रोमांचक था।
+  </p>
+
+  <p>
+    2023 के सरकारी आंकड़ों के अनुसार, भारतीय वायुसेना में 1,600 से अधिक महिला अधिकारी कार्यरत हैं। 
+    शिवांगी उन्हीं बहादुर महिलाओं में से एक हैं जो फाइटर पायलट की जिम्मेदारी निभा रही हैं। 
+    उनकी यह उड़ान भारतीय महिलाओं की बदलती उड़ान का प्रतीक बन चुकी है।
+  </p>
+
+  <p>
+    बनारस में पली-बढ़ी शिवांगी सिंह 2017 में भारतीय वायुसेना में शामिल हुई थीं। 
+    वह <strong>मिग-21 बाइसन</strong> उड़ाने वाली पहली महिला पायलट हैं। 
+    उनकी राफेल स्क्वाड्रन में पोस्टिंग महिला सैन्य अधिकारियों के लिए मील का पत्थर है।
+  </p>
+</div>
+<!-- Back to Top Button -->
+<a href="#top" class="go-to-top"><i class="fa fa-arrow-up"></i></a>
+
+<!-- CSS for Back to Top Button -->
+<style>
+    .go-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 50px; /* Adjust this value to move it left or right */
+        background-color: #4eb8c4; /* Teal Color */
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .go-to-top:hover {
+        background-color: #2e8b89; /* Darker teal on hover */
+        transform: scale(1.1);
+    }
+
+    .go-to-top i {
+        font-size: 20px; /* Adjust the icon size */
+    }
+    h2 {
+      text-align: center;
+      color: olive;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+</style>
+<h2>Featured Maps Gallery</h2>
+  <p class="gallery-description">Here's a glimpse of some of our maps. Click "View More" to explore the full gallery!</p>
+
+  <div class="gallery">
+    <div>
+      <p>Map 1: </p>
+      <a href="gallery.html#map1"><img src="Map1.jpg" alt="Map 1"></a>
+    </div>
+    <div>
+      <p>Map 2: Soul's Journey</p>
+      <a href="gallery.html#map2"><img src="Map6.jpg" alt="Map 2"></a>
+    </div>
+    <div>
+      <p>Map 3: Lavana Samudra & Antardvips</p>
+      <a href="gallery.html#map3"><img src="Map3.jpg" alt="Map 3"></a>
+    </div>
   </div>
- </body>
+
+  <a href="gallery.html" class="view-more-btn">View More</a><br>
+        <div style="text-align: center; font-family: 'Georgia', serif; background-color: #e0f7f7; padding: 20px; border-radius: 10px; color: #006666;">
+  <h3>Let’s Connect</h3>
+  <p>If my words have stirred your soul or sparked a quiet thought,</p>
+  <p>I would love to hear from you.</p>
+  <p>Email: <a href="mailto:sudhasureshshah@gmail.com" style="color: #004d4d;">sudhasureshshah@gmail.com</a></p>
+        </div>
+  <!-- Footer Section -->
+<footer style="background-color: #f1f1f1e0; padding: 30px 0; text-align: center; border-top: 2px solid #4eb8c4;">
+    <p style="font-size: 18px; color: #4eb8c4; font-family: 'Arial', sans-serif;">
+        <strong>Made with 💖 by Dhruvi Panchal</strong>
+    </p>
+    <p style="font-size: 16px; color: #333; font-family: 'Arial', sans-serif;">
+        Book Graphics by <strong>Darshana Dalvi</strong>
+    </p>
+    <div style="font-size: 14px; color: #4eb8c4; font-family: 'Arial', sans-serif; margin-top: 10px;">
+        <p>© 2024 Sudha Shah's Journey. All Rights Reserved.</p>
+    </div>
+</footer>    
+
+</body>
 </html>
+ 
